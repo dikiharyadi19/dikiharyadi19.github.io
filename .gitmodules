@@ -22,3 +22,6 @@
 [submodule "themes/amethyst"]
 	path = themes/amethyst
 	url = https://github.com/64bitpandas/amethyst.git
+[submodule "themes/adritian-free-hugo-theme"]
+	path = themes/adritian-free-hugo-theme
+	url = https://github.com/zetxek/adritian-free-hugo-theme.git
