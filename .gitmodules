@@ -19,3 +19,6 @@
 [submodule "themes/hugo-digital-garden-theme"]
 	path = themes/hugo-digital-garden-theme
 	url = https://github.com/paulmartins/hugo-digital-garden-theme.git
+[submodule "themes/amethyst"]
+	path = themes/amethyst
+	url = https://github.com/64bitpandas/amethyst.git
