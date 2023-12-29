@@ -1,3 +1,18 @@
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "themes/coming-soon"]
+	path = themes/coming-soon
+	url = https://github.com/mansoorbarri/coming-soon.git
+[submodule "themes/up-business-theme"]
+	path = themes/up-business-theme
+	url = https://gitlab.com/writeonlyhugo/up-business-theme.git
+[submodule "themes/hugoplate"]
+	path = themes/hugoplate
+	url = https://github.com/zeon-studio/hugoplate.git
+[submodule "themes/hugo-fresh"]
+	path = themes/hugo-fresh
+	url = https://github.com/StefMa/hugo-fresh.git
+[submodule "themes/Agnes"]
+	path = themes/Agnes
+	url = https://github.com/dchucks/agnes-hugo-theme.git
