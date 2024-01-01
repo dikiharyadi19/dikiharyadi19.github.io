@@ -1,0 +1,18 @@
+---
+title: "Building an Oauth2 Server"
+pubDate: 2024-01-01
+slug: oauth2
+description: Oauth2 Server implementation at RCTI+.
+categories: ["authentication"]
+tags: ["authentication", "login", "token", "authorize"]
+langs: ["Golang", "Postgresql"]
+featured: true
+link: "https://github.com/Oauth2Server"
+linkText: "Repository and Paper"
+cover: "/uploads/cvcs_cover.jpg"
+
+---
+
+Developed and maintained OAuth2 Server at PT MNC Asia Holding, streamlining authentication integration and unifying user management systems. Reduced complexity, improved efficiency, and researched/selecting PostgreSQL as the database engine. Developed Golang microservices.
+
+

@@ -14,7 +14,7 @@ cover: "/website.jpg"
 
 As you probably have imagined, I built this website myself. Actually, I've rebuilt it several times because I can't decide how I want it. I think that this is due to the fact that as soon as I find new inspiration or a framework I like, I cannot stop thinking about it. If you like to tidy your home before hosting guests, well, I like to tidy MY home, my digital home, that is, in a certain way — the website you are reading. So, it has to be the thing that better represents me, what I did, and what my tastes are, even if this means rebuilding it twice a year. I want to spend some words about the major versions of it and why I chose them.
 
-[![pages-scores](/uploads/scores.png)](https://pagespeed.web.dev/analysis/https-jacksalici-com/3hqj7sj4ug?form_factor=mobile)
+[![pages-scores](/uploads/scores.png)](https://pagespeed.web.dev/analysis/https-diki.haryadi-my-id/3hqj7sj4ug?form_factor=mobile)
 
 ## Hugo
 
@@ -30,7 +30,7 @@ Finally, it's very fast. Faster than Hugo, actually (I got a +3% on PageSpeed In
 
 ## Features
 
-The entire source code of the website is open source and available on [this](https://github.com/jacksalici/haryadi.my.id) GitHub repository.
+The entire source code of the website is open source and available on [this](https://github.com/dikiharyadi19/dikiharyadi19.github.io) GitHub repository.
 
 Since the website is static, it's really good both in performance and lightweightness, and moreover, it makes it possible to pay nothing for hosting (the whole thing is hosted on _Netlify_). The only expense I'm in charge of is the domain, which I have bought from _Cloudflare_ for a few dollars per year.
 
