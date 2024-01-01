@@ -1,0 +1,1 @@
+import"./hoisted.10ab386a.js";const e=document.getElementById("fact");let t="";try{t=(await(await fetch("https://api.api-ninjas.com/v1/facts",{method:"GET",headers:{"X-Api-Key":"8Idmhms+nG6e6Agy9f1jQA==gfaW91jpy9ty2nGz"}})).json())[0].fact+"."}catch{t="Ops, an error occurred."}e.innerText=t;
