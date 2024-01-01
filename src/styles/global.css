@@ -1,0 +1,87 @@
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+
+
+@font-face {
+	font-family: 'MonaspaceNeon';
+	src: url('/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-feature-settings: 'ss01' 1, 'ss02' 1, 'ss03' 1, 'ss04' 1, 'ss05' 1, 'ss06' 1, 'ss07' 1, 'ss08' 1, 'calt' 1, 'dlig' 1;
+}
+
+@font-face {
+	font-family: 'MonaspaceRadon';
+	src: url('/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-feature-settings: 'ss01' 1, 'ss02' 1, 'ss03' 1, 'ss04' 1, 'ss05' 1, 'ss06' 1, 'ss07' 1, 'ss08' 1, 'calt' 1, 'dlig' 1;
+}
+
+@font-face {
+	font-family: 'MonaspaceKrypton';
+	src: url('/fonts/MonaspaceKryptonVarVF[wght,wdth,slnt].woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-feature-settings: 'ss01' 1, 'ss02' 1, 'ss03' 1, 'ss04' 1, 'ss05' 1, 'ss06' 1, 'ss07' 1, 'ss08' 1, 'calt' 1, 'dlig' 1;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('/fonts/InterVariable.woff2') format('woff2');
+	font-display: swap;
+	font-feature-settings: 'calt' 1, 'dlig' 1 "case" 1;
+}
+
+i,
+em {
+	font-family: 'MonaspaceRadon';
+}
+
+html {
+	font-family: 'MonaspaceNeon';
+}
+
+pre,
+code,
+kbd {
+	font-family: 'MonaspaceKrypton' !important;
+}
+
+main {
+	@apply max-w-4xl p-2 md:p-4 mx-auto
+}
+
+.opacityOnHover {
+	@apply opacity-50 hover:opacity-100 transition-opacity
+}
+
+img {
+	@apply rounded-lg shadow-lg
+}
+::selection {
+	@apply bg-purple
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Inter, sans-serif;
+	line-height: 100%;
+	font-feature-settings: 'liga' 1, 'calt' 1, 'case' 1, 'ss03' 1;
+	font-variant-ligatures: common-ligatures;
+}
+
+img.emoji {
+	height: 1em;
+	width: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -.1em;
+	display: inline
+}

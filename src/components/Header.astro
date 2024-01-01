@@ -1,0 +1,70 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+type Props = HTMLAttributes<"a">;
+const { href, class: className, ...props } = Astro.props;
+---
+
+<header class="p-4">
+  <nav class="flex items-center justify-between text-primary">
+    <a href="/" aria-label="Logo of Jack">
+      <svg
+        id="logo"
+        class="max-h-10 w-12 transition-fill fill-primary group"
+        viewBox="0 0 942 1000"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xml:space="preserve"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+      >
+        <g transform="matrix(1,0,0,1,-383.556,-420.583)">
+          <path
+            class="group-hover:fill-blue transition-all"
+            d="M544.989,1122.5C579.959,1152.47 625.389,1170.58 675.017,1170.58C785.4,1170.58 875.017,1080.97 875.017,970.583L1125.02,970.583C1125.02,1218.94 923.379,1420.58 675.017,1420.58C563.875,1420.58 462.09,1380.2 383.556,1313.34L544.989,1122.5Z"
+          ></path>
+          <path
+            class="group-hover:fill-pink transition-all"
+            d="M1324.98,420.583L1324.98,670.583C1214.6,670.583 1124.98,760.2 1124.98,870.583L874.983,870.583C874.983,622.221 1076.62,420.583 1324.98,420.583Z"
+          ></path>
+          <path
+            class="group-hover:fill-yellow transition-all shadow-xl shadow-primary"
+            d="M1008.84,420.583C921.088,482.377 852.184,569.178 812.535,670.583L540.994,670.583L540.994,420.583L1008.84,420.583Z"
+          ></path>
+        </g>
+      </svg>
+    </a>
+
+    <div class="group inline-block relative z-50 transition-all">
+      <button
+        class="text-primary font-semibold rounded inline-flex items-center opacity-50 group-hover:opacity-100 transition-all"
+        aria-label="Hamburger Menu"
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32"
+          viewBox="0 -960 960 960"
+          width="32"
+          class="fill-primary"
+          ><title>An hamburger as Menu Icon</title>
+          <path
+            d="M158.565-118.668q-33.705 0-56.801-23.096-23.096-23.096-23.096-56.801v-95.564q0-16.407 11.612-28.011 11.613-11.604 28.67-11.604h722.767q16.407 0 28.011 11.604t11.604 28.011v95.564q0 33.705-23.096 56.801-23.096 23.096-56.801 23.096h-642.87Zm-12.309-147.488v67.591q0 5.385 3.462 8.847 3.462 3.462 8.847 3.462h642.87q5.385 0 8.847-3.462 3.462-3.462 3.462-8.847v-67.591H146.256Zm332.621-173.179q-39.518 0-59.582 20.949t-74.371 20.949q-54.308 0-73.077-20.949t-57.23-20.949q-32.553 0-50.777 15.629-18.224 15.628-51.07 22.551-12.695 2.974-23.398-6.231-10.704-9.205-10.704-23.957 0-14.853 9.786-25.881 9.787-11.027 23.188-17.237 21.962-7.061 43.229-19.761 21.267-12.701 59.617-12.701 54.308 0 72.731 20.949 18.422 20.949 57.617 20.949 39.194 0 59.359-20.949 20.164-20.949 74.472-20.949 54.307 0 74.686 20.949 20.379 20.949 59.513 20.949 39.133 0 58.546-20.949 19.412-20.949 73.997-20.949 38.333 0 59.667 13.065 21.333 13.064 43.949 19.782 13.256 6.282 22.781 17.639 9.526 11.358 9.526 25.551 0 14.193-10.654 23.449-10.654 9.256-23.576 6.282-32.513-6.923-50.551-22.551-18.037-15.629-49.168-15.629-38.817 0-59.355 20.949-20.538 20.949-74.924 20.949-54.787 0-74.929-20.949-20.142-20.949-59.298-20.949Zm1.337-401.997q73.175 0 144.973 12.304 71.797 12.304 128.738 39.928 56.941 27.624 92.174 72.028 35.233 44.404 35.233 108.277 0 16.288-11.604 27.9-11.604 11.612-27.242 11.612H118.181q-16.288 0-27.9-11.612-11.613-11.612-11.613-27.9 0-63.909 35.268-108.337 35.267-44.428 91.595-71.998 56.329-27.57 128.114-39.886 71.786-12.316 146.569-12.316Zm.786 67.588q-145.13 0-230.54 39.334t-86.409 97.539h629.231q-2.742-58.205-85.336-97.539Q625.353-773.744 481-773.744Zm-1 507.588Zm-1.333-370.715Z"
+          ></path></svg
+        >
+      </button>
+      <div
+        class="group-hover:flex absolute hidden text-primary flex-col space-y-6 p-6 right-0 w-min items-end transition-all bg-black rounded-xl"
+      >
+        <a
+          class="block whitespace-nowrap hover:font-bold hover:-translate-x-2 text-right transition-all"
+          href="/#p">Projects</a
+        >
+
+        <a
+          class="block whitespace-nowrap hover:font-bold hover:-translate-x-2 text-right transition-all"
+          href="/#contacts">Contacts</a
+        >
+      </div>
+    </div>
+  </nav>
+</header>

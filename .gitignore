@@ -1,0 +1,8 @@
+content/projects/md-syntax.md
+.env
+node_modules
+resources
+.DS_store
+.astro
+.vscode
+dist

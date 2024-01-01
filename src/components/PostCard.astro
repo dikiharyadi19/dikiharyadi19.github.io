@@ -1,0 +1,41 @@
+---
+//credit https://github.com/MaeWolff/astro-portfolio-template/blob/main/src/components/PostCard.astro
+import FormattedDate from "../components/FormattedDate.astro";
+
+type Props = {
+  title?: string;
+  pubDate?: Date;
+  description?: string;
+  slug?: string;
+  summary?: string;
+  categories?: string[];
+  featured?: Boolean;
+  trending?: Boolean;
+};
+
+const { ...props } = Astro.props;
+const MyA = props.slug ? 'a': 'div' 
+---
+
+<MyA
+  class:list={["group flex max-w-full relative gap-2 py-4 md:p-4 rounded-2xl", {" cursor-pointer transition-all transition-300 hover:-translate-y-2": props.slug}]}
+  href={props.slug}
+>
+  <div class="flex flex-col gap-1 items-center">
+    {!props.slug && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 fill-pink"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>}
+    {props.slug && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 transition-all group-hover:translate-x-1 fill-pink"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>}
+    {props.featured && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-4 transition-all group-hover:scale-75 fill-yellow"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M192 32c17.7 0 32 14.3 32 32V199.5l111.5-66.9c15.2-9.1 34.8-4.2 43.9 11s4.2 34.8-11 43.9L254.2 256l114.3 68.6c15.2 9.1 20.1 28.7 11 43.9s-28.7 20.1-43.9 11L224 312.5V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V312.5L48.5 379.4c-15.2 9.1-34.8 4.2-43.9-11s-4.2-34.8 11-43.9L129.8 256 15.5 187.4c-15.2-9.1-20.1-28.7-11-43.9s28.7-20.1 43.9-11L160 199.5V64c0-17.7 14.3-32 32-32z"/></svg>}
+    {props.trending && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-5 transition-all group-hover:-translate-x-1 fill-blue"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z"/></svg>}
+
+  </div>
+  <div class="flex w-full flex-col gap-2">
+    <p class="opacity-50 text-sm">
+      <FormattedDate date={props.pubDate} />
+      {props.categories &&  ( <span>~ </span> <span class="font-bold">{props.categories}</span>)}
+    </p>
+    <p class="uppercase font-semibold">{props.title}</p>
+    <p class="">
+      {props.summary}
+    </p>
+  </div>
+</MyA>
