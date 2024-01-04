@@ -1,6 +1,6 @@
 ---
 title: '"Developed Correspondent Bank API Services at Bank BRI"'
-pubDate: 2022-07-02
+pubDate: 2021-04-02
 slug: "rba"
 description: "Developed Correspondent Bank API Services at Bank BRI."
 categories: ["Bank"]

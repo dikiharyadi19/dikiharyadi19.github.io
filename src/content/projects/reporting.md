@@ -1,6 +1,6 @@
 ---
 title: "Building an Reporting Service"
-pubDate: 2024-01-01
+pubDate: 2023-07-01
 slug: reporting
 description: Built Reporting API for RCTI+ platform.
 categories: ["reporting-service"]

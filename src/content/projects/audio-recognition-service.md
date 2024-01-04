@@ -1,6 +1,6 @@
 ---
 title: '"Building audio recognition services using Golang"'
-pubDate: 2022-07-02
+pubDate: 2023-10-01
 slug: "audio-recognition"
 description: "Audio Recofnition Services is about identifying music in user-generated content."
 categories: ["Audio"]
