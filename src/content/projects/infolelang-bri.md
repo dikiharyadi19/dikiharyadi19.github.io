@@ -1,6 +1,6 @@
 ---
 title: "Infolelang marketing platform for Bank BRI"
-pubDate: 2024-01-01
+pubDate: 2022-04-01
 slug: portal
 description: Infolelang marketing platform for Bank BRI.
 categories: ["portal"]

@@ -1,6 +1,6 @@
 ---
 title: "Enhancing user authentication at an Identity Provider Service"
-pubDate: 2024-01-01
+pubDate: 2023-03-01
 slug: core-idp
 description: Enhancing user authentication at an Identity Provider Service.
 categories: ["identity-provider"]
